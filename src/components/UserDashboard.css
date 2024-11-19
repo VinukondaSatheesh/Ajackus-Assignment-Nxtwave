@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #678b6f;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.user-dashboard {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.user-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+.user-form button:hover {
+  background-color: #218838;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+}
+
+.user-table button {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 2px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.user-table button:first-child {
+  background-color: #007bff;
+}
+
+.user-table button:last-child {
+  background-color: #dc3545;
+}
+
+.user-table button:hover {
+  opacity: 0.8;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  flex: 1 1 calc(33.33% - 40px);
+  max-width: 300px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Responsive Styles for Tablets and Mobile Devices */
+@media (max-width: 1024px) {
+  .user-card {
+    flex: 1 1 calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .user-card {
+    flex: 1 1 100%; 
+  }
+
+  .user-form input,
+  .user-form button {
+    max-width: 100%; 
+  }
+
+  .user-table {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .user-card {
+    flex: 1 1 100%; 
+  }
+
+  .user-form input,
+  .user-form button {
+    max-width: 100%;
+    font-size: 14px; 
+  }
+}
